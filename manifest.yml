@@ -1,8 +1,8 @@
 ---
 applications:
-  - name: pal-tracker-trevor
-    path: build/libs/pal-tracker.jar
-routes:
+- name: pal-tracker-trevor
+  path: build/libs/pal-tracker.jar
+  routes:
   - route: pal-tracker-trevork.cfapps.io
   env:
     WELCOME_MESSAGE: Hello from the review environment
