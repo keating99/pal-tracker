@@ -2,7 +2,7 @@
 
 set -e
 
-app_name="${1:-pal-tracker-trevor}"
+app_name="${1:-pal-tracker}"
 script_dir="${2:-.}"
 service_name="${3:-tracker-database}"
 service_key="${4:-flyway-migration-key}"
@@ -72,7 +72,7 @@ function wait_for_tunnel() {
             break
         else
             echo "Ssh tunnel not detected yet..."
-            sleep 3
+            sleep 20
         fi
     done
 
