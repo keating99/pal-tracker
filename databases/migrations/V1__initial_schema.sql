@@ -4,7 +4,6 @@ CREATE TABLE time_entries (
   user_id    BIGINT(20),
   date       DATE,
   hours      INT,
-
   PRIMARY KEY (id)
 )
   ENGINE = innodb
